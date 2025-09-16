@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media print {
+  header, footer, nav {
+    display: none !important; /* nasconde intestazione e footer */
+  }
+
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  aside {
+    position: static !important;
+    margin-top: 20px;
+  }
+
+  body {
+    color: black !important;
+    background: white !important;
+  }
+}
